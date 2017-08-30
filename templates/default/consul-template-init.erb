@@ -70,10 +70,10 @@ case "$1" in
     ;;
     restart)
     $0 stop
-    if is_running; then
-        echo "Unable to stop $NAME, will not attempt to start"
-        exit 1
-    fi
+    #if is_running; then
+    #    echo "Unable to stop $NAME, will not attempt to start"
+    #    exit 1
+    #fi
     $0 start
     ;;
     status)
