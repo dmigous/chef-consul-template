@@ -91,10 +91,10 @@ case "$1" in
         sleep 1
         echo
 
-        if ! is_running; then
-            echo "$NAME has died, see $LOGFILE"
-            exit 1
-        fi
+        #if ! is_running; then
+        #    echo "$NAME has died, see $LOGFILE"
+        #    exit 1
+        #fi
     else
         echo "$NAME not running"
     fi
